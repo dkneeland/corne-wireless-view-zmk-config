@@ -22,12 +22,12 @@
         combo_spc1 {
             timeout-ms = <50>;
             key-positions = <37 38>;
-            bindings = <&kp A>;
+            bindings = <&mo MEDIA>;
         };
         combo_spc2 {
             timeout-ms = <50>;
             key-positions = <39 40>;
-            bindings = <&kp B>;
+            bindings = <&mo FUNC>;
         };
     };
 };

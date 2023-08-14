@@ -9,33 +9,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-	behaviors {
-		hm: homerow_mods {
-			compatible = "zmk,behavior-hold-tap";
-			label = "HOMEROW_MODS";
-			#binding-cells = <2>;
-			tapping-term-ms = <200>;
-			flavor = "tap-preferred";
-			bindings = <&kp>, <&kp>;
-		};
-		sm: shift_mods {
-			compatible = "zmk,behavior-hold-tap";
-			label = "SHIFT_MODS";
-			#binding-cells = <2>;
-			tapping-term-ms = <150>;
-			flavor = "tap-preferred";
-			bindings = <&kp>, <&kp>;
-		};
-		wm: win_mods {
-			compatible = "zmk,behavior-hold-tap";
-			label = "WIN_MODS";
-			#binding-cells = <2>;
-			tapping-term-ms = <300>;
-			flavor = "tap-preferred";
-			bindings = <&kp>, <&kp>;
-		};
-	};
-
 		keymap {
 				compatible = "zmk,keymap";
 
@@ -47,8 +20,8 @@
 				// |        |        | L3 Esc  | L1 Spc  | L2 Tab || L5 Enter | L4 BSPC | L6 DEL  |        |        |
 			bindings = <
 				&none  &kp Q       &kp W       &kp F        &kp P        &kp B        &kp J        &kp L        &kp U        &kp Y         &kp APOS    &none
-				&none  &wm LGUI A  &hm LALT R  &hm LCTRL S  &sm LSHFT T  &kp G        &kp M        &sm LSHFT N  &hm LCTRL E  &hm LALT I    &wm LGUI O  &none
-				&none  &kp Z       &hm RALT X  &kp C        &kp D        &kp V        &kp K        &kp H        &kp COMMA    &hm RALT DOT  &kp FSLH    &none
+				&none  &kp A  &kp R  &kp S  &kp T  &kp G        &kp M        &kp N  &kp E  &kp I    &kpO  &none
+				&none  &kp Z       &kp X  &kp C        &kp D        &kp V        &kp K        &kp H        &kp COMMA    &kp DOT  &kp FSLH    &none
 				                               &lt 3 ESC    &lt 1 SPACE  &lt 2 TAB    &lt 5 ENTER  &lt 4 BSPC   &lt 6 DEL
 				>;
 		};

@@ -21,12 +21,12 @@
         compatible = "zmk,combos";
         combo_spc1 {
             timeout-ms = <50>;
-            key-positions = <40 41>;
+            key-positions = <37 38>;
             bindings = <&kp A>;
         };
         combo_spc2 {
             timeout-ms = <50>;
-            key-positions = <42 43>;
+            key-positions = <39 40>;
             bindings = <&kp B>;
         };
     };

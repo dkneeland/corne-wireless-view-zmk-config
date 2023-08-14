@@ -64,13 +64,13 @@
 		};
 		media {
 				// ---------------------------------------------------------------------------
-				// | RESET |      |       |       |   ||      |      |      |      |        |
+				// |       |      |       |       |   ||      |      |      |      |        |
 				// | LGUI  | LALT | LCTRL | LSHFT |   ||      | Prev | Vol- | Vol+ | Next   |
 				// |       | RALT |       |       |   || BT 0 | PT 1 | BT 2 | BT 3 | BT CLR |
 				// |       |      |       |       |   || Stop | Play | Mute |      |        |
             label = "Media";
 			bindings = <
-				&none  &reset    &none     &none      &none      &none    &none         &none             &none         &none         &none       &none
+				&none  &none     &none     &none      &none      &none    &none         &none             &none         &none         &none       &none
 				&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none         &kp K_PREV        &kp K_VOL_DN  &kp K_VOL_UP  &kp K_NEXT  &none
 				&none  &none     &kp RALT  &none      &none      &none    &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR  &none
 				                           &trans     &none      &none    &kp K_STOP2   &kp K_PLAY_PAUSE  &kp K_MUTE
@@ -85,10 +85,10 @@
 				// |   |   | . | 0 | - ||  |         |       |      |      |
             label = "Numpad";
 			bindings = <
-				&none  &hm LBRC LBKT    &hm AMPS NUM_7  &hm ASTRK NUM_8  &hm LPAR NUM_9   &hm RBRC RBKT      &none  &none      &none      &none     &none     &none
-				&none  &hm COLON SEMI   &hm DLLR NUM_4  &hm PRCNT NUM_5  &hm CARET NUM_6  &hm PLUS EQUAL     &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
-				&none  &hm TILDE GRAVE  &hm EXCL NUM_1  &hm AT NUM_2     &hm HASH NUM_3   &hm PIPE BSLH      &none  &none      &none      &kp RALT  &none     &none
-				                                        &hm LPAR DOT     &hm RPAR NUM_0   &hm UNDER MINUS    &none  &trans     &none
+				&none  &kp LBKT   &kp NUM_7  &kp NUM_8  &kp NUM_9   &kp RBKT      &none  &none      &none      &none     &none     &none
+				&none  &kp SEMI   &kp NUM_4  &kp NUM_5  &kp NUM_6   &kp EQUAL     &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
+				&none  &kp GRAVE  &kp NUM_1  &kp NUM_2  &kp NUM_3   &kp BSLH      &none  &none      &none      &kp RALT  &none     &none
+				                                        &kp DOT     &kp NUM_0   &kp MINUS    &none  &trans     &none
 			>;
 		};
 

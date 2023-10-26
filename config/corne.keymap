@@ -58,9 +58,9 @@
 				// |        |        | L3 Esc  | L1 Spc  | L2 Tab || L5 Enter | L4 BSPC | L6 DEL  |        |        |
 			label = "Base";
 			bindings = <
-				&none  &kp Q       &kp W       &kp F         &kp P         &kp B         &kp J         &kp L        &kp U        &kp Y     &kp APOS    &none
-				&none  &kp A       &kp R       &kp S         &hrm LSHFT T  &kp G         &kp M         &hrm RSHFT N &kp E        &kp I     &kp O       &none
-				&none  &kp Z       &kp X       &kp C         &kp D         &kp V         &kp K         &kp H        &kp COMMA    &kp DOT   &kp FSLH    &none
+				&none  &kp Q       &kp W       &kp F         &kp P         &kp B         &kp J         &kp L        &kp U        &kp Y       &kp APOS    &none
+				&none  &hrm LGUI A &hrm LALT R &hrm LCTRL S  &hrm LSHFT T  &kp G         &kp M         &hrm RSHFT N &hrm LCTRL E &hrm LALT I &hrm LGUI O &none
+				&none  &kp Z       &kp X       &kp C         &kp D         &kp V         &kp K         &kp H        &kp COMMA    &kp DOT     &kp FSLH    &none
 				                               &lt LMOD ESC  &lt NAV SPACE &lt MOUSE TAB &lt SYM ENTER &lt NUM BSPC &lt RMOD DEL
 				>;
 		};

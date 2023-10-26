@@ -35,6 +35,18 @@
 };
 
 / {
+    behaviors {
+        hrm: tap-unless-interrupted {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-unless-interrupted";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
 		keymap {
 				compatible = "zmk,keymap";
 
@@ -47,7 +59,7 @@
 			label = "Base";
 			bindings = <
 				&none  &kp Q       &kp W       &kp F         &kp P         &kp B         &kp J         &kp L        &kp U        &kp Y     &kp APOS    &none
-				&none  &kp A       &kp R       &kp S         &kp T         &kp G         &kp M         &kp N        &kp E        &kp I     &kp O       &none
+				&none  &kp A       &kp R       &kp S         &hrm LSHFT T  &kp G         &kp M         &hrm RSHFT N &kp E        &kp I     &kp O       &none
 				&none  &kp Z       &kp X       &kp C         &kp D         &kp V         &kp K         &kp H        &kp COMMA    &kp DOT   &kp FSLH    &none
 				                               &lt LMOD ESC  &lt NAV SPACE &lt MOUSE TAB &lt SYM ENTER &lt NUM BSPC &lt RMOD DEL
 				>;
